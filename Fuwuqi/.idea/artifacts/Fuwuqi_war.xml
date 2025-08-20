@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="Fuwuqi:war">
-    <output-path>$PROJECT_DIR$/out/artifacts/Fuwuqi_war</output-path>
-    <root id="archive" name="Fuwuqi_war.war">
-      <element id="artifact" artifact-name="Fuwuqi:war exploded" />
-    </root>
-  </artifact>
-</component>

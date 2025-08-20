@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".video">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:background="@android:color/background_dark">
+
+        </WebView>
+
+        <com.example.whole.view.DiscView
+            android:id="@+id/view"
+            android:layout_width="263dp"
+            android:layout_height="255dp"
+            android:layout_gravity="center"></com.example.whole.view.DiscView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="坐标 0 0" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="180dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_circle_color"
+            android:gravity="center"
+            android:text="START" />
+
+        <View
+            android:id="@+id/view27"
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="180dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:text="STOP"
+            android:background="@drawable/button_circle_red"/>>
+
+<!--        <Button-->
+<!--            android:id="@+id/newweb"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="46dp"-->
+<!--            android:background="#DFF7DF"-->
+
+<!--            android:drawableLeft="@mipmap/video"-->
+<!--            android:drawableRight="@mipmap/arrow1"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="打开视频" />-->
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/shang"
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="118dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp" />
+
+                <View
+                    android:id="@+id/view12"
+                    android:layout_width="78dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:foreground="@drawable/t" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="个人中心"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:gravity="center"
+                android:text="我的设备"
+                android:textSize="18sp" />
+
+            <GridLayout
+                android:id="@+id/GridLayout1"
+                android:layout_width="313dp"
+                android:layout_height="256dp"
+                android:layout_gravity="center"
+                android:columnCount="6"
+                android:orientation="horizontal"
+                android:rowCount="6">
+
+                <Button
+                    android:id="@+id/btn_robot"
+                    android:layout_width="132dp"
+                    android:layout_height="64dp"
+                    android:layout_columnSpan="3"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_5"
+                    android:text="机器人" />
+
+                <Button
+                    android:id="@+id/btn_laptop"
+                    android:layout_width="132dp"
+                    android:layout_height="64dp"
+                    android:layout_columnSpan="3"
+                    android:layout_marginTop="20dp"
+
+                    android:background="@drawable/button_6"
+                    android:text="laptop" />
+
+
+            </GridLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

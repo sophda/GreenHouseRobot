@@ -30,10 +30,20 @@
 
 - 测量结果：将测量到的结果通过excel展示
 
+## Android APP
+
+![app20250820_143001](src/app20250820_143001.gif)
+
 ## 各个文件夹
 
-1. Fuwuqi：部署在云服务器端的，控制mysql服务器
-2. laptop：上位机软件
+1. Web：部署在云服务器端的，控制mysql服务器
+2. PC：上位机软件
+   - 基于pyqt实现realsense与RGB相机共三路视频流推送
+   - 控制机器人启停
 3. raspberry：树莓派端控制软件
-4. whole2：Android app
+4. Android：Android app
+   - 支持NFC连接下位机
+   - 嵌入Unity支持数字孪生交互
+   - 通过拍摄二维码获取云端作物数据
+5. STM32：下位机，控制直流减速电机巡线运行
 
