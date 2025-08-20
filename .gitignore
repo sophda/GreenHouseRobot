@@ -1,0 +1,6 @@
+*.iml
+*.gradle
+*.externalNativeBuild
+*.cxx
+*.so
+*.lib

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view13"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" />
+
+<!--            <View-->
+<!--                android:id="@+id/view4"-->
+<!--                android:layout_width="238dp"-->
+<!--                android:layout_height="66dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:background="@drawable/hzau" />-->
+
+            <ViewFlipper
+                android:id="@+id/flipper"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:flipInterval="2000">
+
+                <ImageView
+                    android:layout_width="393dp"
+                    android:layout_height="99dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hzau" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img1" />
+
+            </ViewFlipper>
+
+
+            <GridLayout
+                android:id="@+id/GridLayout1"
+                android:layout_width="313dp"
+                android:layout_height="256dp"
+                android:layout_gravity="center"
+                android:columnCount="6"
+                android:orientation="horizontal"
+                android:rowCount="6">
+
+                <Button
+                    android:id="@+id/btn_news"
+                    android:layout_width="132dp"
+                    android:layout_height="64dp"
+                    android:layout_columnSpan="3"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_1"
+                    android:text="资讯" />
+
+                <Button
+                    android:id="@+id/process_img"
+                    android:layout_width="132dp"
+                    android:layout_height="64dp"
+                    android:layout_columnSpan="3"
+                    android:layout_marginTop="20dp"
+
+                    android:background="@drawable/button_2"
+                    android:text="简单表型" />
+
+                <Button
+                    android:id="@+id/show_video"
+                    android:layout_width="132dp"
+                    android:layout_height="64dp"
+                    android:layout_columnSpan="3"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_3"
+                    android:text="监控" />
+                <Button
+                    android:id="@+id/d"
+                    android:layout_width="132dp"
+                    android:layout_height="64dp"
+                    android:layout_columnSpan="3"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_4"
+                    android:text="耕作经验" />
+
+            </GridLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
